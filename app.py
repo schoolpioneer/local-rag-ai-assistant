@@ -20,7 +20,7 @@ def main():
     ollama_url = os.getenv("OLLAMA_BASE_URL", "http://localhost:11434")
     
     
-    llm = OllamaLLM(base_url=ollama_url, model="qwen2.5:1.5b", temperature=0.2)
+    llm = OllamaLLM(base_url=ollama_url, model="qwen2.5:1.5b", temperature=0.1)
     context = load_docs()
     
     print("База знаний загружена. Спрашивай что хочешь (для выхода набери 'exit').")
